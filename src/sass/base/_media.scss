@@ -13,6 +13,35 @@
     .advantage {
         padding: 70px 15px 65px 15px;
     }
+    .consultation {
+        padding: 100px 15px 92px 15px;
+    }
+    .carousel {
+        &__inner {
+            width: 100%;
+            padding: 0 5px;
+            img {
+                width: 100%;
+            }
+            .slick-dots_mod {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li {
+                    padding: 0 20px;
+                    button {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .catalog {
+        &__content {
+            justify-content: space-around;
+            padding: 0 7px;
+        }
+    }
 }
 @media (max-width: 767px) {
     .promo {
@@ -27,6 +56,22 @@
         &__descr {
             font-size: 19px;
         }
+    }
+    .catalog {
+        &__content {
+            justify-content: space-around;
+            padding: 0 7px;
+        }
+        &__tab {
+            width: 165px;
+            height: 50px;
+            div {
+                font-size: 17px;
+            }
+        }
+    }
+    .review {
+        padding: 0px 10px;
     }
 }
 @media (max-width: 575px) {
@@ -76,6 +121,74 @@
     .advantage {
         &__main {
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .feed-form {
+        width: 290px;
+    }
+    .consultation {
+        &__descr {
+            font-size: 15px;
+        }
+    }
+    .title__left {
+        font-size: 22px;
+    }
+    .catalog {
+        &__tabs {
+            margin-top: 30px;
+        }
+        &__tab {
+            width: 78px;
+            height: 37px;
+            div {
+                font-size: 8px;
+                line-height: 37px;
+            }
+        }
+    }
+    .review {
+        .title {
+            font-size: 26px;
+        }
+        &__wrapper {
+            padding: 0px 10px;
+            flex-direction: column;
+            img {
+                margin-bottom: 18px;
+                margin-right: 0;
+            }
+        }
+        &__title {
+            text-align: center;
+        }
+        &__subtitle {
+            text-align: center;
+        }
+    }
+    .footer {
+        &__info {
+            width: 285px;
+            height: 175px;
+            padding: 15px 23px 15px 23px;
+        }
+        &__addr {
+            font-size: 18px;
+            line-height: 18px;
+            margin-bottom: 20px;
+        }
+        &__phone {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        &__social {
+            margin-top: 20px;
+            &-item {
+                width: 45px;
+                height: 45px;
+            }
         }
     }
 }

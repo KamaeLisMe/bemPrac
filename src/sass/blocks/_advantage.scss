@@ -1,12 +1,6 @@
 .advantage {
     min-height: 475px;
     padding: 70px 0 65px 0;
-    &__title {
-        font-weight: bold;
-        font-size: 30px;
-        text-align: center;
-        color: #0D0D0D;
-    }
     &__main {
         display: flex;
         justify-content: space-between;
@@ -46,5 +40,18 @@
             text-decoration-line: underline;
             color: #FF0000;
         }
+    }
+    #heartbeatanimate {
+        animation: heartbeat 2s ease infinite;
+        // animation-name
+        // animation-duration: ;
+        // animation-timing-function: ;
+        // animation-iteration-count: ;
+        &:hover {
+            animation-play-state: paused;
+        }
+    }
+    #shoeanimate {
+        animation: run 1.5s ease-out infinite;
     }
 }
